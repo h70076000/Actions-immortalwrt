@@ -17,7 +17,7 @@ on:
 
 env:
   CONFIG_FILE: 'config/hxzn_n4000.config'
-  REPO_URL: https://github.com/h70076000/openwrt6
+  REPO_URL: https://github.com/h70076000/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   DIY_P4_SH: diy-part4.sh
