@@ -11,7 +11,7 @@ src-git video https://github.com/openwrt/video.git;openwrt-25.12
 src-git qmodem https://github.com/FUjr/QModem.git;main
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git small https://github.com/kenzok8/small
-src-git hxzn https://github.com/h70076000/openwrt-packages
+src-git hxzn https://github.com/h70076000/openwrt-packages.git
 src-git rtp https://github.com/xuanranran/openwrt-rtp2httpd
 src-git easytier https://github.com/EasyTier/luci-app-easytier.git
 EOF
