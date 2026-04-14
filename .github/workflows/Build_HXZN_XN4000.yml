@@ -16,7 +16,7 @@ on:
         type: boolean
 
 env:
-  CONFIG_FILE: 'config/hxzn_n4000.config'
+  CONFIG_FILE: 'config/hxzn.config'
   REPO_URL: https://github.com/h70076000/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
