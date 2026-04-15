@@ -11,7 +11,7 @@ src-git video https://github.com/openwrt/video.git;openwrt-25.12
 src-git qmodem https://github.com/FUjr/QModem.git;main
 src-git kenzo https://github.com/h70076000/openwrt-packages
 src-git small https://github.com/kenzok8/small
-src-git npu https://github.com/h70076000/luci-app-airoha-npu.git
+src-git npu https://github.com/h70076000/luci-app-airoha-npu
 src-git easytier https://github.com/EasyTier/luci-app-easytier.git
 EOF
 
