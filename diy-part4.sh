@@ -12,6 +12,8 @@ src-git qmodem https://github.com/FUjr/QModem.git;main
 src-git kenzo https://github.com/h70076000/openwrt-packages
 src-git small https://github.com/kenzok8/small
 src-git airoha https://github.com/rchen14b/luci-app-airoha-npu
+src-git theme https://github.com/h70076000/luci-theme-aurora.git
+src-git aurora https://github.com/h70076000/luci-app-aurora-config
 src-git easytier https://github.com/EasyTier/luci-app-easytier.git
 EOF
 
