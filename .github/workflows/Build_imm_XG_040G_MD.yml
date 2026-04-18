@@ -96,7 +96,15 @@ jobs:
         else
         echo "::set-output name=status::success"
         fi
-       
+
+    - name: Clone source code
+      working-directory: /workdir
+      run: |
+        df -hT $PWD
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        tar zxvf $GITHUB_WORKSPACE/XG-040G-MD.tar.gz -C /workdir/openwrt
+        
     - name: Free up disk space
       run: |
         sudo mkdir -p /mnt/openwrt/{dl,staging_dir,build_dir}
