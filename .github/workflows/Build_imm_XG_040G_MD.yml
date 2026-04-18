@@ -17,7 +17,7 @@ on:
 
 env:
   CONFIG_FILE: 'config/040.config'
-  REPO_URL: https://github.com/bingoguo93/immortalwrt
+  REPO_URL: https://github.com/h70076000/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   DIY_P4_SH: diy-part4.sh
@@ -57,6 +57,11 @@ jobs:
         wget https://github.com/xuxin1955/depend_ubuntu2204_openwrt/releases/download/ubuntu_26.04_LTS_mkbootimg/mkbootimg_34.0.5-12build1_all.deb
         sudo dpkg -i mkbootimg_34.0.5-12build1_all.deb
         sudo apt-get install -f -y
+        sudo -E apt-get -qq autoremove --purge
+        sudo -E apt-get -qq clean
+        sudo timedatectl set-timezone "$TZ"
+        sudo mkdir -p /workdir
+        sudo chown $USER:$GROUPS /workdir
         # 验证安装
         mkbootimg --help || true
         MKBOOTIMG_PATH=$(which mkbootimg)
